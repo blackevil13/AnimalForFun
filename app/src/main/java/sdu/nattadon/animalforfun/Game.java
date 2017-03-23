@@ -20,7 +20,7 @@ public class Game extends AppCompatActivity {
     ImageView questiionImageView;
     MediaPlayer mediaPlayer;
     ImageButton volumnImageButton;
-    int questionCount = 1;
+    int questionCount = 1;\\จำนวนข้อ
     ArrayList<Integer> qID = new ArrayList<Integer>();
     String amswer;
 
@@ -38,10 +38,10 @@ public class Game extends AppCompatActivity {
         questiionImageView = (ImageView) findViewById(ImvQuetion);
         volumnImageButton = (ImageButton)findViewById(ImbVolum);
 
-        for (int =1; i<= questionCount; i++){
+        for (int i=1; i<= questionCount; i++){
             qID.add(i);
         }
-        Collection.shuff(qID);
+        Collection.shuffle(qID);
         Setquestiion(qID.remove(0));
     }
 
@@ -56,7 +56,7 @@ public class Game extends AppCompatActivity {
             choice.add("แมว");
             choice.add("วัว");
             choice.add("สุนัข");
-            Collection.shuff(choice);
+            Collection.shuffle(choice);
             Btn1.setText(choice.remove(0));
             Btn2.setText(choice.remove(0));
             Btn3.setText(choice.remove(0));
